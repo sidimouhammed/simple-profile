@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+*{
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #F5F5F5; */
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px #E9EFEC;
+    /* margin: 50px; */
+}
+.card-Profile{
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    background-color: #E9EFEC;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.card-Profile::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 24px 24px 0 0;
+    height: 40%;
+    width: 100%;
+    background-color: #4535C1;
+}
+.card-Profile .image-profile {
+    position: relative;
+    margin-top: 15px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #4535C1;
+    padding: 3px;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+.image-profile .image{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #E9EFEC;
+    
+}
+.card-Profile .name{
+    margin-top: 10px;
+    background-color: #E9EFEC;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.name span{
+    background-color: #E9EFEC;
+}
+.name .last-name{
+    color: tomato;
+}
+.socile-media{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E9EFEC;
+}
+.socile-media .link{
+    font-size: 33px;
+    background-color: #E9EFEC;
+    text-decoration: none;
+    margin: 0 10px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+.socile-media .facebook{
+    background-color: #E9EFEC;
+    color: #4535C1;
+}
+.socile-media .snapchat{
+    background-color: #E9EFEC;
+    color: #ffe900;
+}
+.socile-media .linkedin{
+    background-color: #E9EFEC;
+    color: #004ba8;
+}
+.socile-media .whatsapp{
+    background-color: #E9EFEC;
+    color: #64f58d;
+}
+.messages{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+   transition: all 0.5s ease-out;
+}
+.stylems:hover{
+    background-color: #0e4bf1;
+    /* border: 1px solid #4535C1; */
+    cursor: pointer;
+    
+}
+.stylems{
+    /* border: 1px solid #4535C1; */
+    border: none;
+    font-style: 14px;
+    background-color:#4535C1;
+    padding:10px 25px;
+    margin: 0 15px;
+    font-weight: 600;
+    border-radius: 25px;
+    color: #fff;
+}
+.analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+   
+    
+}
+.analytics .data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-right: 20px; */
+    border-right: solid 2px #8c8585;
+    padding: 0 20px;
+    color: #333;
+}
+.data:last-child{
+    border-right: none;
+}
+.fa-heart:hover{
+    color: tomato;
+   
+}
+.fa-message:hover{
+    color: #64f58d;
+}
